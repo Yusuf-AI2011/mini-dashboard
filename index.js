@@ -7,6 +7,7 @@ const date = document.querySelector(".main__date");
 const button = document.querySelector(".main__button");
 const input = document.querySelectorAll(".input");
 const clear = document.querySelector(".clear");
+const realDate = document.querySelector(".footer__date");
 
 // events
 button.addEventListener("click", (buttonEvent) => {
@@ -29,6 +30,9 @@ button.addEventListener("click", (buttonEvent) => {
     alert("Empty!");
   }
 });
+
+
+realDate.innerHTML = new Date();
 
 // clear.addEventListener("click", (clearEvent) => {
 //   theNameValue = "";
